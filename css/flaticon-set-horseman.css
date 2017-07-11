@@ -1,0 +1,56 @@
+  /*
+    Flaticon icon font: Flaticon
+    Creation date: 01/05/2016 18:49
+    */
+
+@font-face {
+  font-family: "flaticon-set-horseman";
+  src: url("../fonts/flaticons/flaticon-set-horseman.eot");
+  src: url("../fonts/flaticons/flaticon-set-horseman.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/flaticons/flaticon-set-horseman.woff") format("woff"),
+       url("../fonts/flaticons/flaticon-set-horseman.ttf") format("truetype"),
+       url("../fonts/flaticons/flaticon-set-horseman.svg#flaticon-set-horseman") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "flaticon-set-horseman";
+    src: url("../fonts/flaticons/flaticon-set-horseman.svg#flaticon-set-horseman") format("svg");
+  }
+}
+
+[class^="flaticon-horseman-"]:before, [class*=" flaticon-horseman-"]:before,
+[class^="flaticon-horseman-"]:after, [class*=" flaticon-horseman-"]:after {   
+  font-family: "flaticon-set-horseman";
+  font-style: normal;
+}
+
+.flaticon-horseman-animal:before { content: "\f100"; }
+.flaticon-horseman-animal-1:before { content: "\f101"; }
+.flaticon-horseman-animals:before { content: "\f102"; }
+.flaticon-horseman-animals-1:before { content: "\f103"; }
+.flaticon-horseman-animals-2:before { content: "\f104"; }
+.flaticon-horseman-animals-3:before { content: "\f105"; }
+.flaticon-horseman-animals-4:before { content: "\f106"; }
+.flaticon-horseman-arab-horse:before { content: "\f107"; }
+.flaticon-horseman-black:before { content: "\f108"; }
+.flaticon-horseman-black-1:before { content: "\f109"; }
+.flaticon-horseman-black-2:before { content: "\f10a"; }
+.flaticon-horseman-black-3:before { content: "\f10b"; }
+.flaticon-horseman-cup:before { content: "\f10c"; }
+.flaticon-horseman-horse-head-right-side-view-silhouette:before { content: "\f10d"; }
+.flaticon-horseman-horse-head-with-messy-mane-side-view:before { content: "\f10e"; }
+.flaticon-horseman-horse-silhouette:before { content: "\f10f"; }
+.flaticon-horseman-horse-silhouette-side-view-to-the-right:before { content: "\f110"; }
+.flaticon-horseman-horse-turning-with-jockey:before { content: "\f111"; }
+.flaticon-horseman-jumping-horse-silhouette-facing-left-side-view:before { content: "\f112"; }
+.flaticon-horseman-man-riding-on-a-horse-silhouette-of-flamenco:before { content: "\f113"; }
+.flaticon-horseman-monuments:before { content: "\f114"; }
+.flaticon-horseman-national-september-11-memorial-museum:before { content: "\f115"; }
+.flaticon-horseman-silhouette:before { content: "\f116"; }
+.flaticon-horseman-sport:before { content: "\f117"; }
+.flaticon-horseman-tool:before { content: "\f118"; }
+.flaticon-horseman-tool-1:before { content: "\f119"; }
+.flaticon-horseman-tool-2:before { content: "\f11a"; }
