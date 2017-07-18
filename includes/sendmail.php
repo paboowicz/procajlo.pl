@@ -46,7 +46,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
             $phone = isset($phone) ? "Phone: $phone<br><br>" : '';
             $message = isset($message) ? "Message: $message<br><br>" : '';
 
-            $referrer = $_SERVER['HTTP_REFERER'] ? '<br><br><br>This Form was submitted from: ' . $_SERVER['HTTP_REFERER'] : '';
+            $referrer = $_SERVER['HTTP_REFERER'] ? '<br><br><br>Ten formularz został wysłany z: ' . $_SERVER['HTTP_REFERER'] : '';
 
             $body = "$name $email $phone $message $referrer";
 
