@@ -31,8 +31,8 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 
         $botcheck = $_POST['form_botcheck'];
 
-        $toemail = 'paboowicz@gmail.com'; // Your Email Address
-        $toname = 'ThemeMascot'; // Your Name
+        $toemail = 'stadnina@o2.pl'; // Your Email Address
+        $toname = 'Stanisław Procajło'; // Your Name
 
         if( $botcheck == '' ) {
 
@@ -41,10 +41,10 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
             $mail->AddAddress( $toemail , $toname );
             $mail->Subject = $subject;
 
-            $name = isset($name) ? "Name: $name<br><br>" : '';
-            $email = isset($email) ? "Email: $email<br><br>" : '';
+            $name = isset($name) ? "nazwa: $name<br><br>" : '';
+            $email = isset($email) ? "e-mail: $email<br><br>" : '';
             $phone = isset($phone) ? "Phone: $phone<br><br>" : '';
-            $message = isset($message) ? "Message: $message<br><br>" : '';
+            $message = isset($message) ? "wiadomość: $message<br><br>" : '';
 
             $referrer = $_SERVER['HTTP_REFERER'] ? '<br><br><br>Ten formularz został wysłany z: ' . $_SERVER['HTTP_REFERER'] : '';
 
@@ -54,10 +54,10 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
             $sendEmail = $mail->Send();
 
             if( $sendEmail == true ):
-                $message = 'We have <strong>successfully</strong> received your Message and will get Back to you as soon as possible.';
+                $message = 'Otrzymaliśmy <strong>Twoją</strong> wiadomość. Odpowiemy tak szybko jak to tylko możliwe.';
                 $status = "true";
             else:
-                $message = 'Email <strong>could not</strong> be sent due to some Unexpected Error. Please Try Again later.<br /><br /><strong>Reason:</strong><br />' . $mail->ErrorInfo . '';
+                $message = 'Twoja wiadomość <strong>nie została wysłana</strong> z powodu nieoczekiwanego błędu. Spróbuj jeszcze raz.<br /><br /><strong>Błąd:</strong><br />' . $mail->ErrorInfo . '';
                 $status = "false";
             endif;
         } else {
@@ -65,11 +65,11 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
             $status = "false";
         }
     } else {
-        $message = 'Please <strong>Fill up</strong> all the Fields and Try Again.';
+        $message = 'Proszę uzupełnić <strong>wszystkie</strong> dane i spróbować jeszcze raz.';
         $status = "false";
     }
 } else {
-    $message = 'An <strong>unexpected error</strong> occured. Please Try Again later.';
+    $message = 'Nieoczekiwany <strong>błąd</strong>. Spróbouj ponownie później.';
     $status = "false";
 }
 
