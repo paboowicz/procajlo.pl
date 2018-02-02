@@ -31,7 +31,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 
         $botcheck = $_POST['form_botcheck'];
 
-        $toemail = 'stadnina@o2.pl'; // Your Email Address
+        $toemail = 'stadninaprocajlo@o2.pl'; // Your Email Address
         $toname = 'Stanisław Procajło'; // Your Name
 
         if( $botcheck == '' ) {
@@ -57,7 +57,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
                 $message = 'Otrzymaliśmy <strong>Twoją</strong> wiadomość. Odpowiemy tak szybko jak to tylko możliwe.';
                 $status = "true";
             else:
-                $message = 'Twoja wiadomość <strong>nie została wysłana</strong> z powodu nieoczekiwanego błędu. Spróbuj jeszcze raz.<br /><br /><strong>Błąd:</strong><br />' . $mail->ErrorInfo . '';
+                $message = 'Z powodu nieoczekiwanego błędu Twoja wiadomość <strong>nie została wysłana</strong> . Spróbuj jeszcze raz.<br /><br /><strong>Błąd:</strong><br />' . $mail->ErrorInfo . '';
                 $status = "false";
             endif;
         } else {
